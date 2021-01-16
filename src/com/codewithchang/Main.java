@@ -11,7 +11,7 @@ public class Main {
 	    Utility.convertHours(21, 0, 36);
 
 	    // Version 2
-        Utility.convertHours(21, 0, -5);
+        Utility.convertHours(1, 0, -5);
 
         // Version 3
 

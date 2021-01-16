@@ -14,11 +14,6 @@ public class Utility {
             minString = ":" + minutes;
         }
 
-        if (hoursPassed < 0) {
-            int negativeTime = hours + hoursPassed;
-        }
-
-
         System.out.println("The time is " + timeOfHour + minString);
     }
 
@@ -26,7 +21,9 @@ public class Utility {
 
     // Version 3
     public static void convertMinutes(int hours, int minutes, int minutesPassed) {
-
+        int finalHours = hours + minutes + (minutesPassed / 60);
+        int finalMinutes = (minutesPassed % 60);
+        System.out.println(finalHours + ":" + finalMinutes);
     }
 
 
