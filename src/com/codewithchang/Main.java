@@ -15,6 +15,8 @@ public class Main {
 
         // Version 3
 
+        Utility.convertMinutes(21, 00, 147);
+
 
     }
 }
