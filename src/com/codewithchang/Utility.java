@@ -28,9 +28,12 @@ public class Utility {
 
     // Version 4
     public static void militaryHourToStandard(int hour, int minutes, int hoursPassed, boolean standard) {
-        int timeOfHour = (hour + hoursPassed) % 24;
+        int timeOfHour = (hour + (hoursPassed % 60)) % 24;
+
         if (standard == true) {
             System.out.println(timeOfHour % 12 + ":" + minutes);
+        } else {
+            System.out.println(timeOfHour + ":" + minutes);
         }
     }
 
