@@ -5,7 +5,7 @@ public class Utility {
     // Version 1
     public static void convertHours(int hours, int minutes, int hoursPassed) {
 
-        int timeOfHour = (hours + (hoursPassed) % 24;
+        int timeOfHour = (hours + hoursPassed) % 24;
 
         String minString = ":0";
         if (minutes < 10) {
@@ -26,6 +26,12 @@ public class Utility {
         System.out.println(finalHours + ":" + finalMinutes);
     }
 
-
+    // Version 4
+    public static void militaryHourToStandard(int hour, int minutes, int hoursPassed, boolean standard) {
+        int timeOfHour = (hour + hoursPassed) % 24;
+        if (standard == true) {
+            System.out.println(timeOfHour % 12 + ":" + minutes);
+        }
+    }
 
 }

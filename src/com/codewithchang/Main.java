@@ -11,12 +11,14 @@ public class Main {
 	    Utility.convertHours(21, 0, 36);
 
 	    // Version 2
-        Utility.convertHours(1, 0, -5);
+        Utility.convertHours(21, 0, -5);
 
         // Version 3
 
         Utility.convertMinutes(21, 00, 147);
 
+        // Version 4
+        Utility.militaryHourToStandard(21, 27, 2, false);
 
     }
 }
