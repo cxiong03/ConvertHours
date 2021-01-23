@@ -35,6 +35,15 @@ public class Utility {
         } else {
             System.out.println(timeOfHour + ":" + minutes);
         }
+
+    }
+
+    // Version 5
+    static void convertMinutes(int hours, int minutes, int minutesPassed, boolean standard) {
+        String time;
+        int timeOfHour = hours + (minutesPassed / 60);
+        int timeOfMinutes = (minutesPassed + minutes) % 60;
+
     }
 
 }
